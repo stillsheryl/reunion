@@ -10,4 +10,12 @@ class ActivityTest < Minitest::Test
     assert_instance_of Activity, activity
   end
 
+  def test_it_has_attributes
+    activity = Activity.new("Brunch")
+
+    assert_equal "Brunch", activity.name
+    expected = {}
+    assert_equal expected, activity.participants
+  end
+
 end

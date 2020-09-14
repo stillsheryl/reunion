@@ -9,12 +9,12 @@ class ReunionTest < Minitest::Test
   end
 
   def test_it_exists
-    assert_instance_of Reunion, reunion
+    assert_instance_of Reunion, @reunion
   end
 
   def test_it_has_attributes
-    assert_equal "1406 BE", reunion.name
-    assert_equal [], reunion.activities
+    assert_equal "1406 BE", @reunion.name
+    assert_equal [], @reunion.activities
   end
 
 end

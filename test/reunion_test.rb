@@ -36,9 +36,6 @@ class ReunionTest < Minitest::Test
     activity_2.add_participant("Louis", 0)
     @reunion.add_activity(activity_2)
     assert_equal 180, @reunion.total_cost
-
-    expected = {"Maria" => -10, "Luther" => -30, "Louis" => 40}
-    assert_equal expected, @reunion.breakout
   end
 
 end

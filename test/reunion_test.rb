@@ -63,6 +63,10 @@ class ReunionTest < Minitest::Test
     @reunion.add_activity(activity_2)
 
     assert_equal "Maria: -10\nLuther: -30\nLouis: 40", @reunion.summary
+    expected = "Maria: -10
+Luther: -30
+Louis: 40"
+    assert_equal expected, puts @reunion.summary
   end
 
 end
